@@ -21,27 +21,29 @@ before you start, make sure your cooldown has run out!
 ## Headless bot
 
 ### How to get reddit_session cookie
+
 **NOTE: People have reported that this is annoying to do on chrome because teksts get unselected. Therefore we recommend that you use firefox.**
 
 1. Go to [r/place](https://reddit.com/r/place)
 2. Open dev tools and go to the network tab
 3. Refresh the page
 4. Click on the first request to reddit.com/r/place (See image)
-![Screenshot_20220403_165251](https://user-images.githubusercontent.com/9784257/161433856-27ef7e7c-7f00-4b37-b274-4199ea919aa9.png)
+   ![Screenshot_20220403_165251](https://user-images.githubusercontent.com/9784257/161433856-27ef7e7c-7f00-4b37-b274-4199ea919aa9.png)
 5. Go to the tab called `Cookies`
 6. Copy the value of the `reddit_session` cookie
 
 ### Installation instructions
 
 1. Install [NodeJS](https://nodejs.org/).
-2. Download the bot via [this link](https://github.com/PlaceNL/Bot/archive/refs/heads/master.zip).
+2. Download the bot via [this link](https://github.com/PlaceNordic/Bot/archive/refs/heads/master.zip).
 3. Extract the bot anywhere on your desktop
 4. Open a command prompt/terminal in this folder
-    Windows: Shift+right mousebutton in the folder -> Click on "open Powershell here"
-    
-    Mac: No clue, sorry!
-    
-    Linux: Is this necessary?
+   Windows: Shift+right mousebutton in the folder -> Click on "open Powershell here"
+
+   Mac: No clue, sorry!
+
+   Linux: Is this necessary?
+
 5. install the dependencies: `npm i`
 6. execute the bot `node bot.js SESSION_COOKIE_HERE`
 7. BONUS: You can repeat these steps for any amount of accounts you'd want. Keep in mind to use different accounts.
@@ -55,7 +57,7 @@ It has been confirmed to run on x64(average desktop computer) and armv7(raspberr
 1. Install [Docker](https://docs.docker.com/get-docker/)
 2. Run this command: `docker run --pull=always --restart unless-stopped -it ghcr.io/placenl/placenl-bot SESSION_COOKIE_HERE`
 
------
+---
 
 # PlaceNL Bot
 
@@ -78,6 +80,7 @@ Voordat je begint, zorg dat je pixel wachttijd is verlopen!
 ## Headless bot
 
 ### Je sessie cookie verkrijgen
+
 **NOTE: People have reported that this is annoying to do on chrome because teksts get unselected. Therefore we recommend that you use firefox.**
 
 **NOTE: Mensen hebben ons verteld dat dit process vervelend is op chrome, hierom raden wij firefox aan.**
@@ -86,7 +89,7 @@ Voordat je begint, zorg dat je pixel wachttijd is verlopen!
 2. Open Element inspecteren/F12 en ga naar het tabje netwerk
 3. Herlaad de pagina
 4. Click op de eerste request naar reddit.com/r/place (Zie afbeelding)
-![Screenshot_20220403_165251](https://user-images.githubusercontent.com/9784257/161433856-27ef7e7c-7f00-4b37-b274-4199ea919aa9.png)
+   ![Screenshot_20220403_165251](https://user-images.githubusercontent.com/9784257/161433856-27ef7e7c-7f00-4b37-b274-4199ea919aa9.png)
 5. Ga naar het tabje cookies
 6. Kopieer de waarde van `reddit_session`
 
@@ -96,9 +99,9 @@ Voordat je begint, zorg dat je pixel wachttijd is verlopen!
 2. Download de bot via [deze link](https://github.com/PlaceNL/Bot/archive/refs/heads/master.zip).
 3. Pak de bot uit naar een folder ergens op je computer.
 4. Open een command prompt/terminal in deze folder
-    Windows: Shift+Rechter muis knop in de folder -> Click op "Powershell hier openen"
-    Mac: Echt geen idee. Sorry!
-    Linux: Niet echt nodig toch?
+   Windows: Shift+Rechter muis knop in de folder -> Click op "Powershell hier openen"
+   Mac: Echt geen idee. Sorry!
+   Linux: Niet echt nodig toch?
 5. Installeer de nodige depdendencies met `npm i`
 6. Voor de bot uit met `node bot.js SESSIE_COOKIE_HIER`
 7. BONUS: Je kunt de laatse twee stappen zo vaak doen als je wil voor extra accounts. Let wel op dat je andere accounts gebruikt anders heeft het niet heel veel zin.
